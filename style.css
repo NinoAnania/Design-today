@@ -46,3 +46,66 @@ button{
     flex-direction:column;
     gap:12px;
 }
+.navigation a{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#bfbfbf
+    padding:13px 18px;
+    border-radius:10px;
+    transition:.3s;
+    font-size:15px;
+}
+
+.navigation a:hover{
+    background: #333;
+    color:white
+}
+
+.navigation .active{
+    background: #ff2c93;
+    color: white;
+}
+
+/* FOLLOWING */
+.following{
+    margin-top: 60px;
+}
+.following p{
+    color:#6b6b6b;
+    font-size:12px;
+    margin-bottom: 20px;
+    letter-spacing:1px;
+}
+.user{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    maargin-bottom:18px;
+}
+
+.user span{
+    font-size:14px;
+    color:#e3e3e3;
+}
+.load-more{
+    display: block;
+    margin-top:20px;
+    color:#8b8b8b;
+    font-size:13px;
+}
+
+/* MAIN CONTENT */
+.main-content{
+flex: 1;
+padding: 35px 40px;
+background: #fff;
+}
+
+/* HEADER */
+
+.main-content{
+    flex:1;
+    padding: 35px 40px;
+    background: #fff;
+}
