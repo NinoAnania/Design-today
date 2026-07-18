@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #222;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+button{
+    cursor:pointer;
+    border:none;
+    background: none;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width:240px;
+    background: #1d1d1d;
+    color: #fff;
+    padding: 35px 25px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 45px;
+}
+
+.menu-button{
+    position: absolute;
+    left:190px;
+    top:35px;
+}
+
+.navigation{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
