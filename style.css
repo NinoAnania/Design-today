@@ -109,3 +109,63 @@ background: #fff;
     padding: 35px 40px;
     background: #fff;
 }
+
+/* SEARCH */
+
+.search{
+    width: 340px;
+    height: 45px;
+    background: #f7f7f7;
+    border-radius: 12px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0 18px;
+}
+
+.search input{
+    width:100%;
+    border:none;
+    outline:none;
+    background: transparent;
+    font-size:14px;
+}
+
+.search span{
+    color:#999;
+    font-size:18px;
+}
+
+/* RIGHT HEADER */
+.header-right{
+    display: flex;
+    align-items:center;
+    gap:18px;
+}
+.header-right a{
+    color:#ff2c93;
+    font-size:13px;
+    font-weight:600;
+}
+.header-right button{
+    font-size:18px;
+    color:#777;
+}
+.profile img{
+    width: 42px;
+    height:42px;
+    border-radius: 50%;
+    object-fit:cover;
+}
+.upload{
+    background: #ff2c93;
+    color: white  !important;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.upload:hover{
+    background: #e10077;
+}
