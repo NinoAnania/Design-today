@@ -52,7 +52,6 @@ button{
     position:absolute;
     top:35px;
     right:25px;
-
     border:none;
     background:none;
     cursor:pointer;
@@ -112,11 +111,9 @@ button{
 
 .following p{
     margin-bottom:20px;
-
     font-size:11px;
     font-weight:600;
     letter-spacing:2px;
-
     color:#6F6F6F;
 }
 /* USER */
@@ -125,11 +122,8 @@ button{
     display:flex;
     align-items:center;
     gap:12px;
-
     margin-bottom:18px;
-
     cursor:pointer;
-
     transition:0.3s;
 }
 
@@ -140,7 +134,6 @@ button{
 .user img{
     width:38px;
     height:38px;
-
     border-radius:50%;
     object-fit:cover;
 }
@@ -155,16 +148,389 @@ button{
 
 .load-more{
     margin-top:12px;
-
     text-decoration:none;
-
     color:#8D8D8D;
-
     font-size:13px;
-
     transition:.3s;
 }
 
 .load-more:hover{
     color:#FFFFFF;
 }
+
+/* MAIN CONTENT */
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #FFFFFF;
+}
+/* HEADER */
+
+.header{
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+/* SEARCH */
+
+.search{
+    width: 360px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    background: #F8F8F8;
+    border-radius: 10px;
+}
+
+.search input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    color: #555555;
+}
+
+.search input::placeholder{
+    color: #B5B5B5;
+}
+
+.search img{
+    width: 18px;
+    height: 18px;
+}
+
+/* RIGHT SIDE */
+
+.header-right{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+/* GO PRO */
+
+.header-right a{
+    text-decoration: none;
+    color: #FF2D8D;
+    font-size: 12px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.header-right a:hover{
+    color: #d8006b;
+}
+
+/* ICON BUTTONS */
+
+.header-right button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header-right button img{
+    width: 18px;
+    height: 18px;
+}
+
+/* PROFILE */
+
+.profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* UPLOAD */
+
+.upload{
+    width:110px;
+    height:42px;
+    background:#FF2D8D;
+    color:#FFFFFF;
+    border:none;
+    border-radius:10px;
+    font-size:13px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.upload:hover{
+    background:#E6007A;
+}
+
+.upload:active{
+    transform: scale(0.98);
+}
+
+/* CATEGORIES */
+
+.categories{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 30px 40px;
+}
+
+.categories button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: #F5F5F5;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.categories button:hover{
+    background: #FF2D8D;
+    color: #FFFFFF;
+}
+
+.categories .selected{
+    background: #FF2D8D;
+    color: #FFFFFF;
+}
+
+/* Button filter */
+
+.categories .filter{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    color: #444444;
+}
+
+.categories .filter:hover{
+    background: #F5F5F5;
+    color: #444444;
+}
+
+.categories .filter img{
+    width: 16px;
+    height: 16px;
+}
+
+/* DESIGN GRID */
+
+.design-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 20px 40px 50px;
+}
+
+/* CARD */
+
+.design-card{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform .3s ease;
+}
+
+.design-card:hover{
+    transform: translateY(-5px);
+}
+
+/* IMAGE */
+
+.design-card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+}
+
+/* TITLE */
+
+.design-card p{
+    margin-top: 15px;
+    color: #222;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+@media (max-width: 1024px){
+    .design-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px){
+    .design-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* LOAD MORE */
+
+.load-designs{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 60px;
+}
+
+.load-designs button{
+    width: 150px;
+    height: 46px;
+    background: #FFFFFF;
+    color: #555555;
+    border: 1px solid #E5E5E5;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.load-designs button:hover{
+    background: #FF2D8D;
+    color: #FFFFFF;
+    border-color: #FF2D8D;
+}
+
+.load-designs button:active{
+    transform: scale(0.98);
+}
+
+/* TOP DESIGNERS */
+
+.top-designers{
+    padding: 60px 40px;
+}
+
+/* SECTION TITLE */
+
+.section-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.section-title h1{
+    font-size: 30px;
+    font-weight: 700;
+    color: #1F1F1F;
+}
+
+.section-title a{
+    text-decoration: none;
+    color: #FF2D8D;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.section-title a:hover{
+    color: #E40077;
+}
+
+/* DESIGNERS GRID */
+
+.designers-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+/* CARD */
+
+.designer{
+    background: #FFFFFF;
+    border: 1px solid #ECECEC;
+    border-radius: 18px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .3s;
+}
+
+.designer:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+/* IMAGE */
+
+.designer img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* NAME */
+
+.designer h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+/* LOCATION */
+
+.designer p{
+    font-size: 14px;
+    color: #8C8C8C;
+    margin-bottom: 22px;
+}
+
+/* BUTTON */
+
+.designer button{
+    width: 130px;
+    height: 42px;
+    background: #FF2D8D;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.designer button:hover{
+    background: #E40077;
+}
+
+@media (max-width: 1200px){
+
+    .designers-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .designers-grid{
+        grid-template-columns: 1fr;
+    }
+
+}
+
