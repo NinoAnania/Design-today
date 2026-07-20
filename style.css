@@ -552,3 +552,60 @@ button{
 .smartacademy p {
     margin: 0;
 }
+
+/* ORDERS */
+
+.orders {
+    width: 100%;
+    padding: 50px 70px;
+    background: #fff;
+}
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.orders-table thead th {
+    text-align: left;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+    border-bottom: 1px solid #ececec;
+}
+
+.orders-table tbody td {
+    padding: 22px 20px;
+    font-size: 15px;
+    color: #b4b4b4;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.orders-table tbody tr {
+    transition: 0.3s;
+}
+
+.orders-table tbody tr:hover {
+    background: #f8f8f8;
+}
+
+/* GRAY LINE */
+
+.orders-table .active {
+    background: #f3f3f3;
+    border-radius: 10px;
+}
+
+.orders-table .active td {
+    color: #444;
+    font-weight: 600;
+}
+
+/*  PINK LINE */
+
+.orders-table .highlight td {
+    color: #ff2c8b;
+    font-weight: 600;
+}
